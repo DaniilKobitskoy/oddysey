@@ -1,6 +1,9 @@
 package com.app.zeusapp.ofmain
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
+import com.app.zeusapp.MainActivity
 import com.facebook.applinks.AppLinkData
 import com.google.android.gms.ads.identifier.AdvertisingIdClient
 import kotlinx.coroutines.Dispatchers
@@ -25,10 +28,20 @@ class ReplaDpClass(private val context: Context) {
     }
 
 
-    suspend fun dataInfo(): DataInfo {
+    suspend fun dataInfo(): DataInfo? {
         val dpLink = mpDpLp()
         val advertID = getMetrekl()
-        return DataInfo(dpLink!!, advertID)
+
+        if (dpLink != null) {
+            Log.d("ReplaDpClass", "dpLink is not null: $dpLink")
+            return DataInfo(dpLink, advertID)
+        } else {
+            val intent = Intent(context, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context.startActivity(intent)
+            return null
+        }
     }
+
 
 }

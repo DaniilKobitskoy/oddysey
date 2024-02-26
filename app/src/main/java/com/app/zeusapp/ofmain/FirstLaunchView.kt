@@ -33,8 +33,8 @@ class FirstLaunchView : AppCompatActivity() {
 
         if (!prefshareds.contains(START_KEY_ACTIVITY)) {
             lifecycleScope.launch {
-                val dp = linka.dataInfo().dpLink
-                val advert = linka.dataInfo().advertID
+                val dp = linka.dataInfo()!!.dpLink
+                val advert = linka.dataInfo()!!.advertID
                  if (dp.isNullOrBlank()) {
                     val url =   "$FirstChasti$lastDomKey?c=$dp&ad=$advert"
                      when (checkWeb(url)) {
