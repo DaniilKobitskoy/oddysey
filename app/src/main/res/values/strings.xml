@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Eternal Odyssey</string>
+    <string name="play">Play</string>
+    <string name="settings">Options</string>
+    <string name="quit">Quit</string>
+    <string name="ok">Ok</string>
+    <string name="back">Back</string>
+    <string name="playAgain">Play again</string>
+    <string name="backToMenu">Back to Menu</string>
+    <string name="x">x</string>
+    <string name="camerabutton">Camera</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="photo">Photo</string>
+    <string name="facebook_app_id">3707843199537792</string>
+    <string name="facebook_client_token">7f7a05920fdd9f84bb1e5fc4c287f441</string>
+</resources>
