@@ -2,7 +2,7 @@ package com.app.zeusapp.ofmain
 
 import android.app.Application
 
-class ChikaMika: Application() {
+class ChastUrl: Application() {
     companion object {
         val FirstChasti = "https://elysiumrise"
     }

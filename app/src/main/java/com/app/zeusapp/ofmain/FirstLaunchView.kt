@@ -9,10 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.app.zeusapp.MainActivity
 import com.app.zeusapp.R
-import com.app.zeusapp.ofmain.ChikaMika.Companion.FirstChasti
+import com.app.zeusapp.ofmain.ChastUrl.Companion.FirstChasti
 
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
